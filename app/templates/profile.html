@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block main %}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/
+    app.css') }}" /></head>
+
+<img src="{{ url_for('static', filename='im/ye.jfif') }}" alt="Picture of myself" width="300" 
+height="300">
+<h2 style="text-align: center;">Kyle Watson</h2>
+<p style="text-align: center;">@kilowatson2111</p>
+<p style="text-align: center;">Clarendon, Jamaica</p>
+<p style="text-align: center;" id="date">Joined {{ date }}</p>
+<div>
+<p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu mi blandit, porta nisi non, feugiat velit. 
+    Suspendisse ac consectetur justo. Fusce id tortor sed nisl faucibus tincidunt sed vel felis. Duis efficitur rutrum ante, 
+    venenatis viverra felis ornare id. Nulla mollis vitae diam ut vestibulum. Vivamus interdum diam et nisi fringilla, non blandit libero malesuada. 
+    Praesent mollis vulputate vestibulum. Proin rhoncus sem ac lorem fringilla facilisis.</p>
+<div id="side-by-side">
+    <div style="float: left; width: 300px;">
+        <p>50</p>
+        <p>Posts</p>
+    </div>
+    <div style="float: left; width: 300px;">
+        <p>1000</p>
+        <p>Following</p>
+    </div>
+    <div style="float: left; width: 300px;">
+        <p>2500</p>
+        <p>Followers</p>
+    </div>
+</div>
+<br style="clear: left;" />
+<button>Follow</button>
+</div>
+{% endblock %}
