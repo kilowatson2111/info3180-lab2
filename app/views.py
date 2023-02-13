@@ -14,10 +14,11 @@ def home():
 
 @app.route('/about/')
 def about():
-    """Render the website's about page."""
+    """Render the website's about pag."""
     return render_template('about.html', name="Mary Jane")
 
 @app.route('/profile')
+
 def profile():
     return render_template('profile.html', date=format_date_joined(datetime.datetime.now()))
 
